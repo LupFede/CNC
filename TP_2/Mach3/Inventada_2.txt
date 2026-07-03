@@ -1,0 +1,88 @@
+N10 %INV2
+N20 G54 G90 G17
+N30 G21 G90.1
+N40 G00 x0 y0
+N50 y26
+N60 M03 S1500
+N70 G01 z-0.5
+N80 ( Círculo grande abajo a la izquierda )
+N90 G03 x50.1184 y16.2891 I26 J26 F1500
+N100 ( Círculo de esquina abajo al centro )
+N110 G02 x64.115 y26 I64.115 J11 F1000
+N120 G01 x103 y26 F2500
+N130 ( Esquina abajo a la derecha )
+N140 G03 x113 y36 I103 J36 F1500
+N150 G01 x113 y147 F2500
+N160 ( Círculo grande arriba a la derecha )
+N170 G03 x82.276 y153.2614 I97 J147 F1000
+N180 ( Círculo chico arriba a la derecha )
+N190 G02 x75.6742 y152.2619 I78.6453 J154.94 F500
+N200 ( Círculo grande de arriba al centro )
+N210 G03 x42.3005 y152.2374 I59 J135 F1000
+N220 ( Círculo chico de arriba a la izquierda )
+N230 G02 x35.6935 y153.4228 I39.3547 J154.9433 F500
+N240 ( Círculo grande de arriba a la izquierda )
+N250 G03 x4.9999 y146.9999 I21 J147 F1000
+N260 G01 x5 y99 F2500
+N270 x0 y26 F2500
+N280 
+N290 ( Círculos concéntricos de abajo a la izquierda )
+N300 G00 z10
+N310 x6 y26
+N320 G01 z-0.5
+N330 G03 x46 y26 I26 J26 F1000
+N340 G03 x6 y26 I26 J26
+N350 
+N360 G00 z10
+N370 x11 y26
+N380 G01 z-0.5 
+N390 G03 x41 y26 I26 J26
+N400 G03 x11 y26 I26 J26
+N410 
+N420 ( Curvas del medio )
+N430 G00 z10
+N440 x5 y99
+N450 G01 z-0.5
+N460 G02 x43.7893 y110.1598 I26 J99
+N470 G03 x74.2107 y110.1598 I59 J130
+N480 G02 x113 y99 I92 J99
+N490 
+N500 ( Arcos con círculos en las puntas del medio )
+N510 G00 z10
+N520 x104 y99
+N530 G01 z-0.5
+N540 G02 x14 y99 I59 J99
+N550 x38 y99 I26 J99
+N560 G03 x80 y99 I59 J99
+N570 G02 x104 y99 I92 J99
+N580 
+N590 ( Círculo de arriba a la izquierda )
+N600 G00 z10
+N610 x12 y147
+N620 G01 z-0.5
+N630 G03 x30 y147 I21 J147
+N640 x12 y147 I21 J147
+N650 
+N660 ( Círculos concéntricos del arriba en el centro )
+N670 G00 z10
+N680 x46 y135
+N690 G01 z-0.5
+N700 G03 x71.9993 y135.1317 I59 J135
+N710 x46 y135 I59 J135
+N720 G00 z10
+N730 x51 y135
+N740 G01 z-0.5
+N750 G03 x66.9996 y135.1317 I59 J135
+N760 x51 y135 I59 J135
+N770 
+N780 ( Círculo de arriba a la derecha )
+N790 G00 z10
+N800 x88 y147
+N810 G01 z-0.5
+N820 G03 x106 y147 I97 J147
+N830 x88 y147 I97 J147
+N840 
+N850 G00 z10
+N860 M05 
+N870 G00 x0 y0
+N880 M30
